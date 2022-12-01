@@ -34,12 +34,11 @@ class App extends Component {
           )}
           <p>CounterApp: {this.state.counterApp}</p>
           <div >
-          <button className='primary' onClick={() => this.setState({ show: !this.state.show })} style={{ width: "200px", marginLeft: "10px", marginTop:"10px", marginBottom:"10px" }}> Click Here</button>
+          <button className='primary' onClick={() => this.setState({ show: !this.state.show })} style={{ width: "200px", marginLeft: "10px", marginTop:"10px", marginBottom:"10px" }}>{!this.state.show?"Show":"Hide"}</button>
           {!this.state.show ? <Counter style={{ marginLeft: "0" }} /> : null}
           </div>
         </div>
-    );
-  }
+ ) }
 }
  
 export default App;
